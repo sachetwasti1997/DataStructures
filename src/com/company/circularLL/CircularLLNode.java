@@ -1,12 +1,13 @@
-package com.company.linkedlists;
+package com.company.circularLL;
 
-public class LinkedListNode {
+public class CircularLLNode {
 
     private int data;
-    private LinkedListNode next;
+    private CircularLLNode next;
 
-    public LinkedListNode(int data) {
+    public CircularLLNode(int data) {
         this.data = data;
+        this.next = this;
     }
 
     public int getData() {
@@ -17,17 +18,17 @@ public class LinkedListNode {
         this.data = data;
     }
 
-    public LinkedListNode getNext() {
+    public CircularLLNode getNext() {
         return next;
     }
 
-    public void setNext(LinkedListNode next) {
+    public void setNext(CircularLLNode next) {
         this.next = next;
     }
 
     @Override
     public String toString() {
-        return "LinkedListNode{" +
+        return "CircularLLNode{" +
                 "data=" + data +
                 '}';
     }
